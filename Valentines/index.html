@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentines</title>
+    <link rel="icon" type="image/x-icon" href="814907b1297b8f36a5ab93d07e4dbfb0.jpg">
+    <link rel="stylesheet" href="message.css">
+    <link rel="stylesheet" href="yes-dialog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+
+  <button onclick= "showMessageDialog(true)"  class="message-btn">CLICK ME !</button>
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <lord-icon class="gift-box"
+      src="https://cdn.lordicon.com/hwfggmas.json"
+      trigger="in"
+      state="in-reveal"
+      style="width:150px;height:150px">
+  </lord-icon>
+  <audio src=""></audio>
+  <dialog id="message-dialog" class="mess-dialog">
+    <div class="images">
+      <img class="icon" src="814907b1297b8f36a5ab93d07e4dbfb0.jpg" alt="">
+      <img class="icon" src="b75a6e09f8e810a9a371d90b3c69bdf2.jpg" alt="">
+    </div>
+  
+    <div class="wrapper">
+       <h2 class="mess"> Will you be my Valentine ?</h2>
+       <div class="button">
+        <button class="yes-btn" onclick="switchToyesDialog()" >Yes</button>
+       <button class="no-btn" id="moveButton">No</button>
+       </div>
+    </div>
+</dialog>
+
+<dialog id="yes-dialog" class="yes-message">
+<div class="yes-content">
+  <h1>Yeyyy</h1>
+    <div class="cat">
+      <img class="gif-cat" src="1fa22befc10e3cbacd58c5b407a97997.gif" alt="">
+    </div>
+    <img class="heart" src="a166f24f9a096b9ddfdb265d7fe241cb.gif" alt="">
+</div>
+</dialog>
+
+<script>
+     const button = document.getElementById('moveButton');
+     const wrapper = document.querySelector('.wrapper');
+
+        button.addEventListener('mouseover', () => {
+            const wrapperRect = wrapper.getBoundingClientRect(); 
+            const buttonWidth = button.offsetWidth;
+            const buttonHeight = button.offsetHeight;
+
+           
+            const randomX = Math.floor(Math.random() * (wrapperRect.width - buttonWidth));
+            const randomY = Math.floor(Math.random() * (wrapperRect.height - buttonHeight));
+
+            button.style.left = `${randomX}px`;
+            button.style.top = `${randomY}px`;
+        });
+
+const switchToyesDialog = () => {
+showMessageDialog(false);
+showYesDialog(true);
+};
+
+const messageDialog = document.getElementById("message-dialog");
+const showMessageDialog = (show) => show ? messageDialog.showModal() : messageDialog.close();
+
+const yesDialog = document.getElementById("yes-dialog")
+const showYesDialog = (show) => show? yesDialog.showModal() : yesDialog.close();
+</script>
+
+
+</body>
+</html>

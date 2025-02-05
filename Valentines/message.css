@@ -1,0 +1,107 @@
+body{
+    background-color: rgb(255, 216, 216);
+}
+
+
+
+
+.mess{
+    color: rgb(255, 1, 39);
+    text-align: center;
+    padding-top: 50px;
+}  
+
+.gift-box{
+    position: fixed;
+    bottom: 100px;
+    left: 590px;
+    
+}
+
+.icon{
+    margin-right:300px;
+    width: 100px;
+    border-radius: 40px;
+}
+
+.button{
+    text-align: center;
+}
+.images{
+    width:150px;
+ display: flex;
+   
+}
+
+.button button{
+    cursor: pointer;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 800;
+    background-color: rgb(255, 96, 123);
+    color: white;
+    border-style: none;
+    border-radius: 50px;
+    transition: opacity 0.6s , background-color 0.5s;
+}
+
+.button button:hover{
+    opacity: 0.9;
+    background-color: rgb(255, 140, 157);
+}
+
+
+.yes-btn{
+    position: absolute;
+}
+.no-btn {
+     left: 120px;
+    position: absolute; 
+}
+
+
+.message-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    font-weight: 800;
+    padding-bottom: 10px ;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(255, 96, 123);
+    color: white;
+    border-style: none;
+    border-radius: 50px;
+    transition: opacity 0.6s , background-color 0.5s;
+}
+
+.message-btn:hover{
+    opacity: 0.9;
+    background-color: rgb(255, 140, 157);
+   
+}
+
+.wrapper{
+    position: relative;
+    width: 100%;
+    padding-bottom: 5em;
+    border-color: lightpink;
+   
+   
+
+}
+
+.mess-dialog{
+    width: 100%;
+    max-width: 500px;
+    padding: 3em;
+    position: fixed;
+    background-image:url(bg-pink.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    border-color: lightpink;
+}

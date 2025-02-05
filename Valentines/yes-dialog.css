@@ -1,0 +1,48 @@
+.yes-message{
+    width: 100%;
+    padding: 8em;
+    max-width: 500px;
+    position: fixed;
+    background-image:url(bg-pink.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    border-color: lightpink;
+}
+
+.yes-content{
+position: relative;
+}
+
+.yes-content{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.yes-message h1{
+    font-family: Borel , Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: -30px;
+    color: rgb(255, 1, 39);
+}
+
+.cat {
+  z-index: 12;
+   padding: 3em;
+    
+}
+
+.gif-cat{
+ display: flex;
+ width: 300px;
+} 
+
+
+.heart{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+}
